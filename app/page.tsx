@@ -58,57 +58,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Topics */}
-      <section className="py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="mb-4 text-center text-5xl font-bold text-gray-900">
-            Featured Topics
-          </h2>
+      {/* Start Here */}
+<section className="bg-gray-50 py-24">
+  <div className="mx-auto max-w-7xl px-6">
 
-          <p className="mx-auto mb-14 max-w-3xl text-center text-lg text-gray-600">
-            Explore the latest tutorials and practical guides covering
-            today's most in-demand cloud and IT technologies.
-          </p>
+    <h2 className="mb-4 text-center text-5xl font-bold text-gray-900">
+      Start Here
+    </h2>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <TopicCard
-              icon="☁️"
-              title="Microsoft Azure"
-              description="Azure Virtual Machines, Networking, Storage, Azure Entra ID, RBAC and Security."
-            />
+    <p className="mx-auto mb-14 max-w-3xl text-center text-lg text-gray-600">
+      Whether you're here to learn about my journey, explore cloud security,
+      or follow my professional growth, these are the best places to begin.
+    </p>
 
-            <TopicCard
-              icon="🛡️"
-              title="Cloud Security"
-              description="Microsoft Defender, Microsoft Sentinel, Zero Trust, Identity Protection and Security Best Practices."
-            />
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-            <TopicCard
-              icon="⚙️"
-              title="DevOps"
-              description="Git, GitHub, Docker, Kubernetes, CI/CD and Infrastructure as Code."
-            />
+      <Link
+        href="/about"
+        className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-md transition hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl"
+      >
+        <div className="text-5xl">👤</div>
+        <h3 className="mt-6 text-2xl font-bold text-gray-900">
+          About Me
+        </h3>
+        <p className="mt-4 leading-7 text-gray-600">
+          Learn about my background, career journey, and passion for cloud
+          security.
+        </p>
+        <p className="mt-6 font-semibold text-blue-600 group-hover:underline">
+          Read More →
+        </p>
+      </Link>
 
-            <TopicCard
-              icon="💼"
-              title="Microsoft 365"
-              description="Exchange Online, Teams, SharePoint, OneDrive, Intune and Microsoft Entra."
-            />
+      <Link
+        href="/vision"
+        className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-md transition hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl"
+      >
+        <div className="text-5xl">🚀</div>
+        <h3 className="mt-6 text-2xl font-bold text-gray-900">
+          Vision 2.0
+        </h3>
+        <p className="mt-4 leading-7 text-gray-600">
+          Read the personal vision that guides my growth and the cloud security
+          professional I am intentionally becoming.
+        </p>
+        <p className="mt-6 font-semibold text-blue-600 group-hover:underline">
+          Read My Vision →
+        </p>
+      </Link>
 
-            <TopicCard
-              icon="🌐"
-              title="Networking"
-              description="TCP/IP, DNS, VPNs, Routing, Firewalls and Network Troubleshooting."
-            />
+      <Link
+        href="/projects"
+        className="group rounded-2xl border border-gray-200 bg-white p-8 shadow-md transition hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl"
+      >
+        <div className="text-5xl">💼</div>
+        <h3 className="mt-6 text-2xl font-bold text-gray-900">
+          Projects
+        </h3>
+        <p className="mt-4 leading-7 text-gray-600">
+          Explore the Azure, cloud security, automation, and DevSecOps projects
+          I'm building as part of my learning journey.
+        </p>
+        <p className="mt-6 font-semibold text-blue-600 group-hover:underline">
+          View Projects →
+        </p>
+      </Link>
 
-            <TopicCard
-              icon="☁️"
-              title="Cloud Computing"
-              description="Cloud Architecture, Scalability, High Availability and Best Practices."
-            />
-          </div>
-        </div>
-      </section>
+      <TopicCard
+        icon="🛡️"
+        title="Cloud Security"
+        description="Microsoft Defender, Microsoft Sentinel, Zero Trust, Identity Protection and Security Best Practices."
+      />
+
+      <TopicCard
+        icon="☁️"
+        title="Microsoft Azure"
+        description="Azure Virtual Machines, Networking, Storage, Azure Entra ID, RBAC and Security."
+      />
+
+      <TopicCard
+        icon="⚙️"
+        title="DevSecOps"
+        description="Git, GitHub, Docker, Kubernetes, CI/CD and Infrastructure as Code."
+      />
+
+    </div>
+
+  </div>
+</section>
     </main>
   );
 }
