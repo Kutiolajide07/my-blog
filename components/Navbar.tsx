@@ -16,7 +16,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          <Link href="/blog" className="hover:text-blue-600 transition">
+          <Link href="/blog/agentic-ai" className="hover:text-blue-600 transition">
             Blog
           </Link>
 
