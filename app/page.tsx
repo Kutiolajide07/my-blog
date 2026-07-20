@@ -30,10 +30,10 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/tutorials"
+              href="/projects"
               className="rounded-lg border border-blue-400 px-8 py-4 text-lg font-semibold text-blue-300 transition hover:bg-blue-900/40"
             >
-              Explore Tutorials
+              View Projects
             </Link>
           </div>
 
@@ -58,7 +58,167 @@ export default function Home() {
         </div>
       </section>
 
+{/* Featured Projects */}
+
+<section className="bg-white py-24">
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="mb-12 flex items-center justify-between">
+      <div>
+        <h2 className="text-5xl font-bold text-gray-900">
+          Featured Projects
+        </h2>
+
+        <p className="mt-4 max-w-2xl text-lg text-gray-600">
+          Practical cloud engineering projects demonstrating Azure, AWS,
+          Linux, DevOps and Security.
+        </p>
+      </div>
+
+      <Link
+        href="/projects"
+        className="font-semibold text-blue-600 hover:underline"
+      >
+        View All →
+      </Link>
+    </div>
+
+    <div className="grid gap-8 lg:grid-cols-3">
+
+      <article className="rounded-2xl border bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
+
+        <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+          AWS • React • Ubuntu • Nginx
+        </span>
+
+        <h3 className="mt-6 text-2xl font-bold">
+          Production React Deployment
+        </h3>
+
+        <p className="mt-4 text-gray-600 leading-7">
+          Deploying a production-ready React application on AWS EC2 using Ubuntu,
+          Nginx, Linux administration and networking.
+        </p>
+
+        <Link
+          href="/blog/aws-react-nginx"
+          className="mt-8 inline-block font-semibold text-blue-600 hover:underline"
+        >
+          Read Case Study →
+        </Link>
+
+      </article>
+
+      <article className="rounded-2xl border bg-white p-8 shadow-sm">
+
+        <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700">
+          Azure Security
+        </span>
+
+        <h3 className="mt-6 text-2xl font-bold">
+          Azure Monitoring Lab
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Azure Monitor, Log Analytics, Azure Monitor Agent and Data Collection
+          Rules.
+        </p>
+
+        <p className="mt-8 font-semibold text-gray-400">
+          Coming Soon
+        </p>
+
+      </article>
+
+      <article className="rounded-2xl border bg-white p-8 shadow-sm">
+
+        <span className="rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-700">
+          Microsoft Sentinel
+        </span>
+
+        <h3 className="mt-6 text-2xl font-bold">
+          SOC Investigation Lab
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          Threat hunting, KQL queries, incident investigation and Defender XDR.
+        </p>
+
+        <p className="mt-8 font-semibold text-gray-400">
+          Coming Soon
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
       {/* Start Here */}
+<section className="bg-slate-100 py-24">
+
+  <div className="mx-auto max-w-6xl px-6">
+
+    <div className="mb-12 flex items-center justify-between">
+
+      <h2 className="text-5xl font-bold">
+        Latest Articles
+      </h2>
+
+      <Link
+        href="/blog"
+        className="font-semibold text-blue-600 hover:underline"
+      >
+        View All →
+      </Link>
+
+    </div>
+
+    <div className="grid gap-8">
+
+      <Link
+        href="/blog/aws-react-nginx"
+        className="rounded-2xl bg-white p-8 shadow-sm transition hover:shadow-xl"
+      >
+        <p className="text-sm text-blue-600 font-semibold">
+          AWS • React • Ubuntu • Nginx
+        </p>
+
+        <h3 className="mt-3 text-3xl font-bold">
+          Deploying a Production React Application on AWS EC2
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          A complete engineering case study covering deployment, Linux,
+          networking, troubleshooting and production operations.
+        </p>
+      </Link>
+
+      <Link
+        href="/blog/agentic-ai"
+        className="rounded-2xl bg-white p-8 shadow-sm transition hover:shadow-xl"
+      >
+        <p className="text-sm text-blue-600 font-semibold">
+          DevOps • AI
+        </p>
+
+        <h3 className="mt-3 text-3xl font-bold">
+          Building Safer and Smarter DevOps Workflows with Agentic AI
+        </h3>
+
+        <p className="mt-4 text-gray-600">
+          My Week 2 engineering reflection covering Claude Code, Skills, MCP,
+          Hooks and AI-assisted development.
+        </p>
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
+
 <section className="bg-gray-50 py-24">
   <div className="mx-auto max-w-7xl px-6">
 
