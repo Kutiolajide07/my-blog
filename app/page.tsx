@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 py-24">
+      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 py-14">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="mb-4 text-lg font-semibold uppercase tracking-wider text-blue-400">
             Welcome to
@@ -37,20 +37,20 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-6">
-              <h3 className="text-4xl font-bold text-blue-400">50+</h3>
-              <p className="mt-2 text-gray-300">Technical Tutorials</p>
+          <div className="mt-10 grid gap-8 md:grid-cols-3">
+            <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-4">
+              <h3 className="text-3xl font-bold text-blue-400">50+</h3>
+              <p className="mt-1 text-gray-300">Technical Tutorials</p>
             </div>
 
             <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-6">
-              <h3 className="text-4xl font-bold text-blue-400">20+</h3>
-              <p className="mt-2 text-gray-300">Hands-on Labs</p>
+              <h3 className="text-3xl font-bold text-blue-400">20+</h3>
+              <p className="mt-1 text-gray-300">Hands-on Labs</p>
             </div>
 
             <div className="rounded-xl border border-slate-700 bg-slate-900/70 p-6">
-              <h3 className="text-4xl font-bold text-blue-400">100%</h3>
-              <p className="mt-2 text-gray-300">
+              <h3 className="text-3xl font-bold text-blue-400">100%</h3>
+              <p className="mt-1 text-gray-300">
                 Practical Learning
               </p>
             </div>
@@ -83,9 +83,9 @@ export default function Home() {
       </Link>
     </div>
 
-    <div className="grid gap-8 lg:grid-cols-3">
+    <div className="grid gap-6 lg:grid-cols-3">
 
-      <article className="rounded-2xl border bg-white p-8 shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
+      <article className="rounded-2xl border bg-white p-6 shadow-sm transition hover:-translate-y-2 hover:shadow-xl">
 
         <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
           AWS • React • Ubuntu • Nginx
@@ -109,7 +109,7 @@ export default function Home() {
 
       </article>
 
-      <article className="rounded-2xl border bg-white p-8 shadow-sm">
+      <article className="rounded-2xl border bg-white p-6 shadow-sm">
 
         <span className="rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-700">
           Azure Security
